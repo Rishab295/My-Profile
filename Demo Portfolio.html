@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional portfolio showcasing skills, education, and projects">
+    <title>Professional Portfolio</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="C:\Users\pc\Downloads\PortfolioBuilder\PortfolioBuilder\css\styles.css">
+    <link rel="stylesheet" href="C:\Users\pc\Downloads\PortfolioBuilder\PortfolioBuilder\css\responsive.css">
+</head>
+<body>
+    <!-- Loading Overlay -->
+    <div class="loading-overlay" id="loadingOverlay">
+        <div class="loading-spinner"></div>
+    </div>
+
+    <!-- Header Section -->
+    <header id="header">
+        <div class="container">
+            <div class="logo" id="logo">Portfolio</div>
+            <nav>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#education" class="nav-link">Education</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="hamburger" id="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="animate-fade-in">
+                    <span class="greeting">Hello, I'm</span>
+                    <span class="name" id="personName">Rishab Das</span>
+                </h1>
+                <h2 class="title animate-slide-up" id="personTitle">Full Stack Developer</h2>
+                <p class="tagline animate-slide-up" id="personTagline">Building creative solutions with code</p>
+                <div class="hero-buttons animate-fade-in">
+                    <a href="#contact" class="btn btn-primary">Get in Touch</a>
+                    <a href="#projects" class="btn btn-secondary">View Work</a>
+                </div>
+                <div class="social-icons animate-fade-in">
+                    <a href="#" target="_blank" class="social-icon" id="linkedin"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" target="_blank" class="social-icon" id="github"><i class="fab fa-github"></i></a>
+                    <a href="#" target="_blank" class="social-icon" id="twitter"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="scroll-down animate-bounce">
+                <a href="#about">
+                    <i class="fas fa-chevron-down"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Me</h2>
+                <div class="section-underline"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="about-description" id="aboutDescription">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean interdum, nibh vitae sodales commodo, 
+                        nisl erat vehicula velit, vel ultrices urna justo non eros. Maecenas fringilla convallis augue nec fermentum.
+                    </p>
+                    <div class="about-details">
+                        <div class="about-detail">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span id="location">San Francisco, CA</span>
+                        </div>
+                        <div class="about-detail">
+                            <i class="fas fa-envelope"></i>
+                            <span id="email">rishabdas139@gmail.com</span>
+                        </div>
+                        <div class="about-detail">
+                            <i class="fas fa-phone"></i>
+                            <span id="phone">9834621522</span>
+                        </div>
+                    </div>
+                    <a href="#" class="btn btn-primary" id="downloadCV">Download Resume <i class="fas fa-download"></i></a>
+                </div>
+                <div class="about-cards">
+                    <div class="about-card">
+                        <div class="about-card-icon">
+                            <i class="fas fa-briefcase"></i>
+                        </div>
+                        <h3 class="about-card-title">Experience</h3>
+                        <p class="about-card-text" id="experienceYears">5+ Years</p>
+                    </div>
+                    <div class="about-card">
+                        <div class="about-card-icon">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <h3 class="about-card-title">Projects</h3>
+                        <p class="about-card-text" id="projectsCount">30+ Completed</p>
+                    </div>
+                    <div class="about-card">
+                        <div class="about-card-icon">
+                            <i class="fas fa-user-graduate"></i>
+                        </div>
+                        <h3 class="about-card-title">Education</h3>
+                        <p class="about-card-text" id="educationHighest">Master's Degree</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Skills</h2>
+                <div class="section-underline"></div>
+            </div>
+            <div class="skills-content">
+                <div class="skills-tabs">
+                    <button class="skill-tab active" data-target="technical">Technical</button>
+                    <button class="skill-tab" data-target="soft">Soft Skills</button>
+                    <button class="skill-tab" data-target="tools">Tools</button>
+                </div>
+                <div class="skills-container">
+                    <div class="skills-category active" id="technical">
+                        <h3 class="skills-category-title">Technical Skills</h3>
+                        <div class="skills-grid" id="technicalSkillsGrid">
+                            <!-- Technical skills will be inserted here -->
+                        </div>
+                    </div>
+                    <div class="skills-category" id="soft">
+                        <h3 class="skills-category-title">Soft Skills</h3>
+                        <div class="skills-grid" id="softSkillsGrid">
+                            <!-- Soft skills will be inserted here -->
+                        </div>
+                    </div>
+                    <div class="skills-category" id="tools">
+                        <h3 class="skills-category-title">Tools & Technologies</h3>
+                        <div class="skills-grid" id="toolsSkillsGrid">
+                            <!-- Tools skills will be inserted here -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education-section section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Education</h2>
+                <div class="section-underline"></div>
+            </div>
+            <div class="timeline" id="educationTimeline">
+                <!-- Education timeline items will be inserted here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Projects</h2>
+                <div class="section-underline"></div>
+            </div>
+            <div class="projects-filter">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="web">Web Development</button>
+                <button class="filter-btn" data-filter="mobile">Mobile Apps</button>
+                <button class="filter-btn" data-filter="design">Design</button>
+            </div>
+            <div class="projects-grid" id="projectsGrid">
+                <!-- Projects will be inserted here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Modal -->
+    <div class="project-modal" id="projectModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-body" id="modalBody">
+                <!-- Modal content will be inserted here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="section-underline"></div>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <p>Feel free to reach out. I'll get back to you as soon as possible.</p>
+                    <div class="contact-details">
+                        <div class="contact-detail">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Location</h4>
+                                <p id="contactLocation">Pune</p>
+                            </div>
+                        </div>
+                        <div class="contact-detail">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <p id="contactEmail">rishabdas139@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-detail">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4>Phone</h4>
+                                <p id="contactPhone">9834621522</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-social">
+                        <a href="#" target="_blank" class="contact-social-icon" id="contactLinkedin"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" target="_blank" class="contact-social-icon" id="contactGithub"><i class="fab fa-github"></i></a>
+                        <a href="#" target="_blank" class="contact-social-icon" id="contactTwitter"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form-container">
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-submit">
+                            Send Message <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p class="copyright">&copy; <span id="currentYear">2023</span> - <span id="footerName">John Doe</span>. All Rights Reserved.</p>
+                <div class="footer-links">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#home" class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- JavaScript -->
+    <script src="C:\Users\pc\Downloads\PortfolioBuilder\PortfolioBuilder\js\data.js"></script>
+    <script src="C:\Users\pc\Downloads\PortfolioBuilder\PortfolioBuilder\js\animations.js"></script>
+    <script src="C:\Users\pc\Downloads\PortfolioBuilder\PortfolioBuilder\js\main.js"></script>
+</body>
+</html>
